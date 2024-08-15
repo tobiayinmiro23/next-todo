@@ -1,8 +1,10 @@
 
 import mongoose from "mongoose";
 let isConnected = false
-const uri = `mongodb+srv://${process.env.USERNAME}:${process.env.DATABASE}@tobi.z8plmj1.mongodb.net/?retryWrites=true&w=majority&appName=tobi`
-
+const uri = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@tobi.z8plmj1.mongodb.net/?retryWrites=true&w=majority&appName=tobi`
+console.log(process.env.USERNAME)
+console.log(process.env.PASSWORD)
+console.log(process.env.DATABASE)
 export const connectToDB = async () => {
     console.log(isConnected)
     mongoose.set('strictQuery', true)
