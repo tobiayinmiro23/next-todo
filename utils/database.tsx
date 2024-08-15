@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 let isConnected = false
-const uri = `mongodb+srv://${process.env.USERNAME}:${process.env.USERNAME}@tobi.z8plmj1.mongodb.net/?retryWrites=true&w=majority&appName=tobi`
+const uri = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@tobi.z8plmj1.mongodb.net/?retryWrites=true&w=majority&appName=tobi`
 
 export const connectToDB = async () => {
     console.log(isConnected)
