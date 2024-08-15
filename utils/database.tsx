@@ -1,6 +1,6 @@
+
 import mongoose from "mongoose";
 let isConnected = false
-const uri = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@tobi.z8plmj1.mongodb.net/?retryWrites=true&w=majority&appName=tobi`
 
 export const connectToDB = async () => {
     console.log(isConnected)
@@ -10,8 +10,9 @@ export const connectToDB = async () => {
         return
     }
     try {
-        await mongoose.connect(uri, {
-            dbName: process.env.DATABASE,
+        // await mongoose.connect('mongodb://127.0.0.1:27017/', {
+        await mongoose.connect('const uri = "mongodb+srv://tobi:<Collinss23>@tobi.z8plmj1.mongodb.net/?retryWrites=true&w=majority&appName=tobi";', {
+            dbName: 'TodoApp',
         })
         isConnected = true
         console.log('database connected')
