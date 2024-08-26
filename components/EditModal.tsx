@@ -14,7 +14,7 @@ function EditModal({ todo, id, getTodo }: IeditTodo) {
         setShow(false)
     }
     const updateTodo = () => {
-        fetch('http://localhost:3000/api/Todo', {
+        fetch('https://next-todo-weld.vercel.app/api/Todo', {
             headers: { 'Content-type': 'application/json' },
             method: 'put',
             cache: "no-store",
