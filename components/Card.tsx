@@ -7,7 +7,7 @@ import { EditModal, Button } from '.'
 const Card = ({ allTodos, setallTodos, getTodo }: Icard) => {
 
     const deleteTodo = (id?: string) => {
-        fetch('http://localhost:3000/api/Todo', {
+        fetch('https://next-todo-weld.vercel.app/api/Todo', {
             headers: { 'Content-type': 'application/json' },
             method: 'delete',
             cache: "no-store",
