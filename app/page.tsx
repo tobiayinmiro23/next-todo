@@ -13,7 +13,7 @@ const page = () => {
   }, [])
   const addTodo = () => {
     if (todoText !== '') {
-      fetch('http://localhost:3000/api/Todo', {
+      fetch('https://next-todo-weld.vercel.app/api/Todo', {
         headers: { 'Content-type': 'application/json' },
         method: 'post',
         cache: "no-store",
@@ -30,7 +30,7 @@ const page = () => {
   }
 
   const getTodo = () => {
-    fetch('http://localhost:3000/api/Todo',
+    fetch('https://next-todo-weld.vercel.app/api/Todo',
       { cache: "no-store" }
     ).then(res => res.json())
       .then(res => setallTodos(res.message))
