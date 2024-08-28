@@ -9,7 +9,6 @@ const page = () => {
   const [loading, setloading] = useState<Boolean>(true)
   useEffect(() => {
     getTodo()
-    setloading(false)
   }, [])
   const addTodo = () => {
     if (todoText !== '') {
@@ -34,12 +33,13 @@ const page = () => {
       { cache: "no-store" }
     ).then(res => res.json())
       .then(res => setallTodos(res.message))
+      .then(res => setloading(false))
       .catch(err => console.log(err))
   }
 
 
   return (
-    <div className="max-w-[1200px] m-[auto]">
+    <div className="max-w-[1000px] m-[auto]">
       <Input settodoText={settodoText} todoText={todoText} addTodo={addTodo} />
       {loading && <h3 className='text-center text-[1.5rem] mt-[2.5rem] font-bold'>loading...</h3>}
       <Card allTodos={allTodos} todoText={todoText} setallTodos={setallTodos} getTodo={getTodo} />
