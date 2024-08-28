@@ -33,7 +33,7 @@ function EditModal({ todo, id, getTodo }: IeditTodo) {
 
     return (
         <>
-            <div onClick={handleShow} className="w-[1.9rem] h-[2rem] ml-[1rem] max-[421px]:ml-[0.3rem]"><img src="/edit (1).png" alt="" /></div>
+            <div onClick={handleShow} className="w-[1.78rem] cursor-pointer h-[2rem] ml-[1rem] mt-[-0.5rem] max-[421px]:ml-[0.3rem]"><img src="/edit (1).png" alt="" /></div>
             <Modal
                 show={show}
                 onHide={cancelModal}
