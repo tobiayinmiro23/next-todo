@@ -76,9 +76,11 @@ A news website built with react, typescript, vite, tailwind, typescript, shadcn 
 
 ## 📝 Environment Variables
 ```env
-- `DATABASE`: <your-mongoDB-database-name>
-- `USERNAME`: <your-mongoDB-username>
-- `PASSWORD`:  <your-mongoDB-password>
-- `SECRETEKEY`: <your-secrete-jwt-key>
+   DATABASE_URL = <your-mongoDB-database-name>
+   USERNAME = <your-mongoDB-username>
+   PASSWORD = <your-mongoDB-password>
+   SECRETEKEY = <your-secrete-jwt-key>
+   
    ```
+
 
