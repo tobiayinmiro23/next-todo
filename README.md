@@ -1,6 +1,6 @@
 # next-todo
 
-A news website built with next, typescript, vite, tailwind and typescript.
+A todo website built with next, typescript, vite, tailwind and typescript.
 
 ## 🚀 Features
 
