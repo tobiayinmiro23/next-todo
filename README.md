@@ -1,6 +1,6 @@
 # next-todo
 
-A news website built with react, typescript, vite, tailwind, typescript, shadcn and newsdata.io API.
+A news website built with next, typescript, vite, tailwind and typescript.
 
 ## 🚀 Features
 
@@ -71,6 +71,7 @@ A news website built with react, typescript, vite, tailwind, typescript, shadcn 
 - **tailwind css**:  *for styling html elements*
 - **bcrypt**:  *for hashing passwords and sensitive information*  
 - **mongodb**:  *for database*
+- **react-bootstrap**:  *for UI components*
 - **mongoose**:  *an Object Data Modeling (ODM) library for Node.js for structuring and managing data in MongoDB using JavaScript*
 
 
